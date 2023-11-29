@@ -63,8 +63,7 @@
     "tsc": "tsc --noEmit",
     "check:build": "yarn test && yarn tsc && yarn lint && yarn build",
     "pod:install": "cd ios && rm -rf Pods && pod install && cd ..",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
-    "prepare": "npm build"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.11.3",
@@ -163,8 +162,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "yarn lint && yarn tsc && yarn test"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "config": {
