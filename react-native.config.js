@@ -6,9 +6,6 @@ module.exports = {
   assets: [
     './src/assets/fonts'
   ],
-  platforms: {
-    ios: null
-  },
   commands: [
     {
       func: () => copy('aesop', `${__dirname}/src/assets/fonts`),
