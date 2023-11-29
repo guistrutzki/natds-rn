@@ -1,0 +1,22 @@
+import { checkTheme } from '../theme/theme';
+const getColors = (theme) => checkTheme(theme).color;
+export const getColorPrimary = (theme) => getColors(theme).primary;
+export const getColorOnPrimary = (theme) => getColors(theme).onPrimary;
+export const getColorPrimaryLight = (theme) => getColors(theme).primaryLight;
+export const getColorSecondary = (theme) => getColors(theme).secondary;
+export const getColorOnSecondary = (theme) => getColors(theme).onSecondary;
+export const getColorBackground = (theme) => getColors(theme).background;
+export const getColorOnBackground = (theme) => getColors(theme).onBackground;
+export const getColorSuccess = (theme) => getColors(theme).success;
+export const getColorOnSuccess = (theme) => getColors(theme).onSuccess;
+export const getColorAlert = (theme) => getColors(theme).alert;
+export const getColorOnAlert = (theme) => getColors(theme).onAlert;
+export const getColorLowEmphasis = (theme) => getColors(theme).lowEmphasis;
+export const getColorMediumEmphasis = (theme) => getColors(theme).mediumEmphasis;
+export const getColorHighEmphasis = (theme) => getColors(theme).highEmphasis;
+export const getColorSurface = (theme) => getColors(theme).surface;
+export const getColorOnSurface = (theme) => getColors(theme).onSurface;
+export const getColorHighlight = (theme) => getColors(theme).highlight;
+export const getColorLink = (theme) => getColors(theme).link;
+export const getColorByName = (theme, colorName) => getColors(theme)[colorName];
+//# sourceMappingURL=colors.js.map
