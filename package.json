@@ -63,7 +63,8 @@
     "tsc": "tsc --noEmit",
     "check:build": "yarn test && yarn tsc && yarn lint && yarn build",
     "pod:install": "cd ios && rm -rf Pods && pod install && cd ..",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "prepare": "npm build"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.11.3",
