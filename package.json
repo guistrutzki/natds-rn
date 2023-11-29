@@ -48,6 +48,7 @@
     "lint:commits": "commitlint --from=master",
     "lint:fix": "eslint --fix .",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ types/",
+    "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router",
     "publish:release": "./bin/release/release.sh",
     "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && watchman shutdown-server && yarn start:clear",
