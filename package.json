@@ -32,7 +32,7 @@
   ],
   "scripts": {
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
-    "build:lib": "tsc --project tsconfig.build.json && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
+    "build:lib": "tsc --project tsconfig.build.json --noEmitOnError false && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
     "build:storybook:md": "node ./bin/docsToStories/buildStorybookDocs.js",
@@ -49,6 +49,7 @@
     "lint:fix": "eslint --fix .",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ types/",
     "publish:release": "./bin/release/release.sh",
+    "postinstall": "yarn autoclean --force",
     "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && watchman shutdown-server && yarn start:clear",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",

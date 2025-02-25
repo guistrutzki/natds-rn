@@ -1,0 +1,10 @@
+import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native';
+export declare const getRadiusBySize: (theme: Theme, size: keyof Size) => any;
+export declare const getBorderRadiusMedium: (theme: Theme) => any;
+export declare const getSize: (theme: Theme, size: keyof Size) => number;
+export declare const getSizeSemi: (theme: Theme) => number;
+export declare const getSizeSemiX: (theme: Theme) => number;
+export declare const getSizeMedium: (theme: Theme) => number;
+export declare const getSizeMediumX: (theme: Theme) => number;
+export declare const getSizeLarge: (theme: Theme) => number;
+export declare const getSizeLargeX: (theme: Theme) => number;

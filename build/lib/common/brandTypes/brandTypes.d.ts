@@ -1,0 +1,1 @@
+export declare type BrandTypes = 'aesop' | 'avon' | 'avon_v2' | 'biome' | 'natura' | 'theBodyShop' | 'consultoriaDeBeleza' | 'consultoriaDeBeleza_v2' | 'forcaDeVendas' | 'forcaDeVendas_v2' | 'natura_v2' | 'natura_v3' | 'casaEestilo' | 'casaEestilo_v2';
